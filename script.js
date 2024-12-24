@@ -1,2 +1,1 @@
-// Placeholder for interactive functionality
-console.log("Script loaded: Placeholder (title)");
+console.log("Links to projects loaded successfully!");
