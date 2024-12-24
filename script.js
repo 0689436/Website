@@ -1,4 +1,4 @@
-// No changes needed in the script for this update.
+// Toggle dark mode theme
 function toggleTheme() {
     document.body.classList.toggle('dark-mode');
 }
