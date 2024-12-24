@@ -1,6 +1,2 @@
-// Script to log button clicks (optional)
-document.querySelectorAll('.project-button').forEach(button => {
-    button.addEventListener('click', () => {
-        console.log(`Button clicked: ${button.textContent}`);
-    });
-});
+// Add any interactivity here if needed
+console.log("Website loaded successfully!");
