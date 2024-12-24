@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Link Page</title>
+    <title>Simple Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome!</h1>
-        <p>Select a project to explore:</p>
-        <button id="toggle-mode" class="mode-toggle">🌙</button>
-    </header>
-    <main>
-        <div class="link-container">
-            <a href="https://0689436.github.io/dot-toucher/" class="link-button">Dot Toucher</a>
-            <a href="https://0689436.github.io/Pong/" class="link-button">Pong</a>
+    <div class="container">
+        <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+        <div class="links">
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
         </div>
-    </main>
-    <footer>
-        <p>Made by Finn</p>
-    </footer>
+    </div>
+
+    <!-- External JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
