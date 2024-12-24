@@ -1,7 +1,6 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,6 +8,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
 }
 
 header {
@@ -18,11 +24,25 @@ header {
 
 h1 {
     font-size: 2rem;
-    color: #333;
+    color: inherit;
 }
 
 p {
-    color: #666;
+    color: inherit;
+}
+
+/* Mode Toggle Button */
+.mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.mode-toggle:hover {
+    transform: scale(1.1);
 }
 
 /* Link Container */
@@ -33,13 +53,14 @@ p {
 
 .link-button {
     text-decoration: none;
-    padding: 15px 30px;
-    font-size: 1rem;
+    padding: 20px 40px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
     background-color: #007BFF;
-    border-radius: 25px;
+    border-radius: 30px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .link-button:hover {
