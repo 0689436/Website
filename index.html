@@ -1,25 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finn's Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="dark-mode">
-    <div class="container">
-        <h1 class="title">Welcome to Finn's Website</h1>
-        <div class="links">
-    <a href="https://0689436.github.io/Pong/" class="link" target="_blank">Play Pong</a>
-    <a href="https://0689436.github.io/dot-toucher/" class="link" target="_blank">Dot Toucher</a>
-    <a href="https://github.com/0689436" class="link" target="_blank">GitHub</a>
-    <a href="https://0689436.github.io/Box-Jump/" class="link" target="_blank">Box Jump</a>
-    <a href="https://0689436.github.io/Daily-Planner-Thing/" class="link" target="_blank">Daily Planner Thing</a>
-    <a href="https://www.reddit.com/user/0689436/" class="link" target="_blank">Reddit</a>
-        </div>
-    </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>0689436</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --accent: #0071e3;
+      --button-bg: #f2f2f2;
+      --button-hover: #e5e5e5;
+    }
 
-    <!-- External JavaScript file -->
-    <script src="script.js"></script>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .link-btn {
+      background: var(--button-bg);
+      color: var(--text);
+      padding: 0.75rem 1.5rem;
+      border-radius: 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s ease;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .link-btn:hover {
+      background: var(--button-hover);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi, I'm Finn</h1>
+  <p>
+   I am 16, Live in Australia, fuck around with computers, and uhhh, Idk, other things or something, Im Bisexual, Nonbinary (They/Them & He/Him are fine)
+  </p>
+
+  <div class="links">
+    <a class="link-btn" href="https://bsky.app/profile/0689436" target="_blank">Bluesky</a>
+    <a class="link-btn" href="https://reddit.com/user/EquivalentWriter7755" target="_blank">Reddit</a>
+    <a class="link-btn" href="https://discord.com/users/1294133269058555996" target="_blank">Discord</a>
+    <a class="link-btn" href="https://github.com/0689436" target="_blank">GitHub</a>
+    <a class="link-btn" href="https://en.pronouns.page/@0689436" target="_blank">Pronouns Page</a>
+  </div>
 </body>
 </html>
