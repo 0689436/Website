@@ -1,18 +1,19 @@
-const themeSwitch = document.getElementById('theme-switch');
+
+const switchInput = document.getElementById('theme-switch');
 const body = document.body;
 
-// Detect system preference on first visit
-const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// Set based on browser preference unless saved
 const savedTheme = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
   body.classList.add('dark-theme');
-  themeSwitch.checked = true;
+  switchInput.checked = true;
 }
 
-// Toggle theme on switch
-themeSwitch.addEventListener('change', () => {
-  if (themeSwitch.checked) {
+// Toggle on click
+switchInput.addEventListener('change', () => {
+  if (switchInput.checked) {
     body.classList.add('dark-theme');
     localStorage.setItem('theme', 'dark');
   } else {
