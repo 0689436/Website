@@ -72,12 +72,11 @@ p {
   }
 }
 
-
+/* Toggle Switch */
 .theme-toggle {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  z-index: 1000;
 }
 
 .theme-toggle input {
@@ -91,26 +90,26 @@ p {
   height: 28px;
   background-color: var(--button-bg);
   border-radius: 34px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   transition: background-color var(--transition-duration);
+  cursor: pointer;
 }
 
 .theme-toggle .slider {
   position: absolute;
   height: 22px;
   width: 22px;
-  left: 3px;
   top: 3px;
+  left: 3px;
   background-color: var(--accent-color);
   border-radius: 50%;
   transition: transform var(--transition-duration), background-color var(--transition-duration);
 }
 
-.theme-toggle input:checked + .switch .slider {
+#theme-switch:checked + .switch .slider {
   transform: translateX(24px);
 }
 
-/* Dark Theme Overrides */
+/* Dark Theme */
 body.dark-theme {
   --bg-color: #000000;
   --text-color: #f5f5f7;
