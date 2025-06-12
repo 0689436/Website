@@ -25,53 +25,60 @@
   <!-- Content -->
   <main class="content">
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section animate-float">
       <h1 class="gradient-text">Hi, I'm Finn</h1>
-      <p class="description">
-        I'm a 16-year-old from Australia, interested in tech, especially web development and AI.
+      <p class="description animate-float delay-200">
+        I'm a 16-year-old from Australia with a growing interest in tech, especially web development and projects involving AI.
       </p>
 
       <!-- Social Links -->
-      <div class="social-links">
-        <a href="https://bsky.app/profile/0689436.bsky.social" target="_blank" class="social-btn" aria-label="Bluesky profile">
+      <div class="social-links animate-float delay-400">
+        <a href="https://bsky.app/profile/0689436.bsky.social" target="_blank" class="glass-btn" aria-label="Bluesky profile">
           Bluesky
         </a>
-        <a href="https://reddit.com/user/EquivalentWriter7755" target="_blank" class="social-btn" aria-label="Reddit profile">
+        <a href="https://reddit.com/user/EquivalentWriter7755" target="_blank" class="glass-btn" aria-label="Reddit profile">
           Reddit
         </a>
-        <a href="https://discord.com/users/1294133269058555996" target="_blank" class="social-btn" aria-label="Discord profile">
+        <a href="https://discord.com/users/1294133269058555996" target="_blank" class="glass-btn" aria-label="Discord profile">
           Discord
         </a>
-        <a href="https://github.com/0689436" target="_blank" class="social-btn" aria-label="GitHub profile">
+        <a href="https://github.com/0689436" target="_blank" class="glass-btn" aria-label="GitHub profile">
           GitHub
         </a>
-        <a href="https://en.pronouns.page/@0689436" target="_blank" class="social-btn" aria-label="Pronouns Page">
+        <a href="https://en.pronouns.page/@0689436" target="_blank" class="glass-btn" aria-label="Pronouns Page">
           Pronouns
         </a>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects-section">
-      <h2 class="gradient-text">Projects</h2>
+    <section class="projects-section animate-float delay-600">
+      <h2 class="gradient-text">My random projects or something.</h2>
 
       <!-- Project Links -->
       <div class="project-links">
-        <a href="https://github.com/0689436/dot-toucher" target="_blank" class="project-btn" aria-label="Dot Toucher project">
-          Dot Toucher
+        <a href="https://github.com/0689436/dot-toucher" target="_blank" class="glass-card" aria-label="Dot Toucher project" tabindex="0">
+          <h3>Dot Toucher</h3>
+          <p>A small interactive dot game.</p>
         </a>
-        <a href="https://github.com/0689436/box-jump" target="_blank" class="project-btn" aria-label="Box Jump project">
-          Box Jump
+        <a href="https://github.com/0689436/box-jump" target="_blank" class="glass-card" aria-label="Box Jump project" tabindex="0">
+          <h3>Box Jump</h3>
+          <p>A simple HTML jump game.</p>
         </a>
-        <a href="https://github.com/0689436/pong" target="_blank" class="project-btn" aria-label="Pong project">
-          Pong
+        <a href="https://github.com/0689436/pong" target="_blank" class="glass-card" aria-label="Pong project" tabindex="0">
+          <h3>Pong</h3>
+          <p>A retro Pong clone made in JavaScript.</p>
         </a>
-        <a href="https://github.com/0689436/object-recognition" target="_blank" class="project-btn" aria-label="AI Recognition project">
-          AI Recognition
+        <a href="https://github.com/0689436/object-recognition" target="_blank" class="glass-card" aria-label="AI Recognition project" tabindex="0">
+          <h3>AI Recognition</h3>
+          <p>An image recognition experiment using ML models.</p>
         </a>
       </div>
     </section>
   </main>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
 
   <!-- Scripts -->
   <script src="script.js"></script>
