@@ -3,32 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>0689436</title>
+  <title>Finn's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="theme-toggle">
-    <input type="checkbox" id="theme-switch" />
-    <label for="theme-switch" class="switch">
-      <span class="slider"></span>
-    </label>
-  </div>
+<body class="dark-mode">
+  <!-- Dot Matrix Background -->
+  <div class="dot-matrix"></div>
 
-  <h1>Hi, I'm Finn</h1>
-  <p>
-    I am 16, live in Australia, fuck around with computers, and uhhh, idk, other things or something.  
-    I'm Pansexual, Nonbinary (They/Them & He/Him are fine).
-  </p>
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <svg class="theme-icon" viewBox="0 0 24 24" fill="none">
+      <!-- Sun Icon -->
+      <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
+      <path d="M12 2V4M12 20V22M4 12H2M22 12H20M19.78 4.22L17.66 6.34M6.34 17.66L4.22 19.78M19.78 19.78L17.66 17.66M6.34 6.34L4.22 4.22"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </svg>
+    <span class="ripple"></span>
+  </button>
 
-  <div class="links">
-    <a class="link-btn" href="https://bsky.app/profile/0689436.bsky.social" target="_blank">Bluesky</a>
-    <a class="link-btn" href="https://reddit.com/user/EquivalentWriter7755" target="_blank">Reddit</a>
-    <a class="link-btn" href="https://discord.com/users/1294133269058555996" target="_blank">Discord</a>
-    <a class="link-btn" href="https://github.com/0689436" target="_blank">GitHub</a>
-    <a class="link-btn" href="https://en.pronouns.page/@0689436" target="_blank">Pronouns Page</a>
-    <a class="link-btn" href="projects.html">Projects</a>
-  </div>
+  <!-- Content -->
+  <main class="content">
+    <h1 class="gradient-text">Hi, I'm Finn</h1>
+    <p class="description">
+      I am 16, live in Australia, fuck around with computers, and uhhh, idk, other things or something.
+      <br />
+      I'm Pansexual, Nonbinary (They/Them & He/Him are fine).
+    </p>
 
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://bsky.app/profile/0689436.bsky.social" target="_blank" class="social-btn" aria-label="Bluesky profile">
+        Bluesky
+      </a>
+      <a href="https://reddit.com/user/EquivalentWriter7755" target="_blank" class="social-btn" aria-label="Reddit profile">
+        Reddit
+      </a>
+      <a href="https://discord.com/users/1294133269058555996" target="_blank" class="social-btn" aria-label="Discord profile">
+        Discord
+      </a>
+      <a href="https://github.com/0689436" target="_blank" class="social-btn" aria-label="GitHub profile">
+        GitHub
+      </a>
+      <a href="https://en.pronouns.page/@0689436" target="_blank" class="social-btn" aria-label="Pronouns Page">
+        Pronouns
+      </a>
+    </div>
+  </main>
+
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
